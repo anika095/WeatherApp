@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <div class="content">
+        <div class="container">
+            <h1 class="display-4 text-white mb-5" id="first_h1">Weather Explorer</h1>
+            <form id="weather-form" class="m-auto" onsubmit="return false;">
+                <div class="input-group">
+                    <input id="city-name" type="text" class="form-control" placeholder="Enter a location" />
+                    <div class="input-group-append">
+                        <button id="search-button" type="button" class="btn btn-danger">Search</button>
+                    </div>
+                </div>
+            </form>
+            <div id="error-message" class="error-message text-white "></div>
+            <div class="weather-status text-white text-center" id="weather-section" style="display: none;">
+                <img id="image-icon" src="" alt="">
+                <h1 id="city"></h1>
+                <h3><span id="temp"></span>&deg;C</h3>
+                <h3 class="lead text-white" ><span id="feels-like"></span>&deg;C</h3>
+                <h1 class="lead text-bold text-white" id="weather"></h1>
+                <h4 class="lead text-white" id="humidity"></h3>
+                <h4 class="lead text-white" id="wind-speed"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
